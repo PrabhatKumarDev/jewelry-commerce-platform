@@ -29,3 +29,28 @@
 .slide-hidden{
     display: none;
 }
+
+.cards{
+    border-width: 1px;
+    transition: box-shadow 0.3s ease;
+}
+.cards:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.cards > button{
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+    transition: background-color 0.3s ease;
+}
+.cards > button:hover{
+    background-color: #D4AF37;
+    color: white;
+}
+
+.item-text{
+    color: white;
+    background-color: rgba(0, 128, 128, 0.5);
+}
+.item > div:hover .item-text{
+    background-color: rgba(0, 128, 128, 1);
+}

@@ -14,3 +14,61 @@ body{
     font-size: 1.6rem;
     background-color: #E5E5E5;
 }
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #D4AF37;
+    background: transparent;
+    transition: all 0.3s ease;
+    color: #36454F;
+}
+.form-input:focus{
+    outline: none;
+    border:2px solid #D4AF37;
+}
+.form-input + p {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #36454F;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    padding: 0 5px;
+    z-index: 11;
+    background-color: #008080;
+    border: none;
+}
+
+.form-input:focus + p,
+.form-input:not(:placeholder-shown) + p {  
+    color: #D4AF37;
+    transform: translateY(-170%);
+    font-size: 0.9em;
+}
+.tooltip{
+    position: relative;
+    height: 100px;
+    margin-top: 1rem;
+    display: none;
+}
+.tooltip::after{
+    content: "";
+    position: absolute;
+    background-color: #008080;
+    width: 2rem;
+    height: 2rem;
+    top:-2px;
+    left: 50%;
+    transform: translateX(-50%);
+    rotate: 45deg;
+}
+
+.signup-icon:hover .tooltip{
+    display: block;
+}

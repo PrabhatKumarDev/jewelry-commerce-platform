@@ -15,7 +15,7 @@ const Carousel = () => {
     return () => clearInterval(timer);
   }, []);
   return (
-    <div className="h-[500px] relative w-screen overflow-hidden">
+    <div className="h-[500px] relative w-screen overflow-hidden mt-24">
       <div 
         className="flex transition-transform duration-500 ease-out h-full"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
